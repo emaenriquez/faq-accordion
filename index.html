@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | FAQ accordion</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="fondo"></div>
+
+  <div class="preguntas">
+
+    <div class="preguntas_header">
+      <img class="img" src="assets/images/icon-star.svg" alt="star-icon">
+      <h1>FAQs</h1>
+    </div>
+
+    <section id="faqSection">
+
+      <details>
+
+        <summary class="summary">
+          What if Frotend Mentor, and how will it help me?
+          <img class="icon" src="assets/images/icon-plus.svg" alt="plus">
+        </summary>
+          
+        <p>Frotend mentor offers realistic coding
+          challenges to help developers improve
+          their frotend coding skills with projects in HTML,CSS, and JavaScript 
+          is´s suitable for all levels and ideal for porfolio buliding </p>
+        
+      </details>
+
+      <details>
+        <summary class="summary">
+          Is Frotend Mentor free?
+          <img class="icon"  src="assets/images/icon-plus.svg" alt="plus">
+        </summary>
+        <p>Frotend mentor offers realistic coding
+          challenges to help developers improve
+          their frotend coding skills with projects in HTML,CSS, and JavaScript 
+          is´s suitable for all levels and ideal for porfolio buliding </p>
+      </details>
+
+      <details>
+        <summary class="summary">
+          Can I sue Frotend Mentor projects in my portfolio?
+          <img class="icon" src="assets/images/icon-plus.svg" alt="plus">
+        </summary>
+        <p>Frotend mentor offers realistic coding
+          challenges to help developers improve
+          their frotend coding skills with projects in HTML,CSS, and JavaScript 
+          is´s suitable for all levels and ideal for porfolio buliding </p>
+      </details>
+
+      <details>
+        <summary class="summary">
+          How can i get helpid I'm stucj on a challenge
+          <img class="icon" src="assets/images/icon-plus.svg" alt="plus">
+        </summary>
+        <p>Frotend mentor offers realistic coding
+          challenges to help developers improve
+          their frotend coding skills with projects in HTML,CSS, and JavaScript 
+          is´s suitable for all levels and ideal for porfolio buliding </p>
+      </details>
+      
+    </section>
+
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+
+      const faqSection = document.getElementById('faqSection');
+      faqSection.addEventListener('click', function (event) {
+        const icon = document.querySelector('.icon');
+        icon.src = icon.src.endsWith('icon-plus.svg') ? 'assets/images/icon-minus.svg' : 'assets/images/icon-plus.svg';
+      });
+    });
+
+  </script>
+</body>
+</html>
